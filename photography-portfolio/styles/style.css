@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Kode+Mono:wght@400..700&display=swap');
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+body {
+    background-color: #fcfbfb;
+    font-family: Cormorant, Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: #a87b45;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+}
+nav a {
+    text-align: center;
+    padding: 90px;
+    color: #00ceb7;
+    text-decoration: none;
+}
+nav a:hover {
+    text-align: center;
+    padding: 90px;
+    background-color: #9bfff3;
+    color: #ff953e;
+    text-decoration: underline;
+}
+.logo {
+    width: 150px;
+}
+#logo_link {
+    padding-left: 50px;
+    justify-self: center;
+    align-self: center;
+}
+
+
+#hero {
+    font-family: "Kode Mono";
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.home-title, .home-msg {
+    text-align: center;
+}
+
+
