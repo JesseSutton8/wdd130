@@ -14,6 +14,7 @@ body {
 }
 
 
+/* NAV BAR (ALL PURPOSES) */
 header {
     display: grid;
     grid-template-columns: 150px auto;
@@ -26,38 +27,148 @@ nav {
 }
 nav a {
     text-align: center;
-    padding: 90px;
-    color: #00ceb7;
+    color: #6effee;
     text-decoration: none;
+    padding: 35px;
 }
 nav a:hover {
-    text-align: center;
-    padding: 90px;
     background-color: #9bfff3;
-    color: #ff953e;
+    color: #753f12;
     text-decoration: underline;
 }
 .logo {
-    width: 150px;
+    width: 80px;
 }
 #logo_link {
-    padding-left: 50px;
+    padding-left: 55px;
     justify-self: center;
     align-self: center;
 }
 
 
+/* OPENING MESSAGE (ALL PURPOSES) */
 #hero {
     font-family: "Kode Mono";
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
+    border-style: solid;
+    border-width: 3px;
 }
 #hero-msg {
     grid-column: 2/3;
     grid-row: 1/2;
-}
-.home-title, .home-msg {
     text-align: center;
 }
 
 
+/* FOOTER (ALL PURPOSES) */
+footer {
+    background-color: #a87b45;
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-style: solid;
+    border-width: 3px;
+}
+footer a {
+    text-align: center;
+    color: #6effee;
+    text-decoration: none;
+}
+.footer-links:hover {
+    background-color: #9bfff3;
+    color: #753f12;
+    text-decoration: underline;
+}
+
+
+/* MAIN SECTION (FOR HOME PAGE) */
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+    background-color: #3fe4d0;
+}
+.car-pic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.car-pic img {
+    max-width: 85%;
+    max-height: 85%;
+}
+.img-desc {
+    text-align: center;
+    font-size: 20px;
+    margin: 30px 30px;
+    background-color: white;
+    border-style: solid;
+    padding: 20px
+}
+#background {
+    height: 160px;
+    background-color: #ffffff;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+/* MAIN SECTION (FOR LOCATIONS PAGE) */
+.locations-grid {
+    display: block;
+    gap: 10px;
+    background-color: #3fe4d0;
+}
+.location-pic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.location-pic img {
+    max-width: 85%;
+    max-height: 85%;
+    margin-top: 65px;
+}
+
+
+/* MAIN SECTION (FOR CONTACT PAGE) */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.container img {
+    width: 100%;
+
+}
+.left-message {
+    position: absolute;
+    left: 16px;
+    top: 300px;
+    background-color: #00aa96;
+    border-color: rgb(0, 58, 51);
+    border-style: solid;
+    border-width: 5px;
+    margin: 10px
+}
+.left-message h1 {
+    font-size: 60px
+}
+.right-message {
+    position: absolute;
+    right: 16px;
+    top: 300px;
+    background-color: #00aa96;
+    border-color: rgb(0, 58, 51);
+    border-style: solid;
+    border-width: 5px;
+    margin: 10px
+}
+.right-message h1 {
+    font-size: 60px
+}
