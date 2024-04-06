@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <div class="scroll-indicator">
+        <h2>Scroll Indicator</h2>
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+    </div>
     <div id="content">
         <header>
             <a id="logo_link" href="index.html">
@@ -18,8 +24,13 @@
                 <a href="contactme.html">Contact Me</a>
             </nav>
         </header>
-        <div id="hero">
-            <section id="hero-msg">
+        <div class="hero-image">
+            <div class="hero-button">
+                <a href="contactme.html">Hire Me</a>
+            </div>
+        </div>
+        <div id="opening-msg">
+            <section id="opening-txt">
                 <h1>Jesse's Photography Portfolio</h1>
                 <h4>I'm an award winning photographer (first and second prize at the Arizona State Fair). I've built this website to display my best work as an automotive photographer. 
                     This portfolio is reserved for the photos that I'm most proud of, but I've taken many more photos in my career, and plan on doing more work. You can even contact me using the tab at the top of this page 
@@ -128,5 +139,16 @@
             </a>
         </footer>
     </div>
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+    
+        function myFunction() {
+            var winScroll = window.scrollY;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>    
 </body>
 </html>
