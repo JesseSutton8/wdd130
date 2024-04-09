@@ -134,7 +134,7 @@ footer a {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
     gap: 10px;
-    background-color: #3fe4d0;
+    background-color: #6effee;
 }
 .car-pic-portrait {
     display: flex;
@@ -177,7 +177,7 @@ footer a {
 .locations-grid {
     display: block;
     gap: 10px;
-    background-color: #3fe4d0;
+    background-color: #6effee;
 }
 .location-pic {
     display: flex;
@@ -204,7 +204,7 @@ footer a {
 }
 .left-message {
     position: absolute;
-    left: 16px;
+    left: 40px;
     top: 300px;
     background-color: #00aa96;
     border-color: rgb(0, 58, 51);
@@ -213,11 +213,12 @@ footer a {
     margin: 10px
 }
 .left-message h1 {
-    font-size: 60px
+    font-size: 40px;
+    padding: 50px;
 }
 .right-message {
     position: absolute;
-    right: 16px;
+    right: 40px;
     top: 300px;
     background-color: #00aa96;
     border-color: rgb(0, 58, 51);
@@ -226,7 +227,8 @@ footer a {
     margin: 10px
 }
 .right-message h1 {
-    font-size: 60px
+    font-size: 45px;
+    padding: 50px;
 }
 
 
@@ -235,6 +237,20 @@ footer a {
     #hero, .home-grid {
         display: block;
         height: auto;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-message, .right-message {
+        position: relative;
+        margin: 20px;
+        width: auto;
+        left: auto;
+        right: auto;
+        top: auto;
     }
     header, nav, footer {
         flex-direction: column;
