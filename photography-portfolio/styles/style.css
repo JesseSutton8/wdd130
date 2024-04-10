@@ -26,6 +26,8 @@ header {
     display: grid;
     grid-template-columns: 150px auto;
     background-color: #a87b45;
+    border-style: solid;
+    border-width: 3px;
 }
 nav {
     display: flex;
@@ -40,13 +42,13 @@ nav a {
 }
 nav a:hover {
     background-color: #9bfff3;
-    color: #753f12;
+    color: #00493a;
     text-decoration: underline;
 }
 .logo {
     width: 80px;
 }
-#logo_link {
+#logo-link-top {
     padding-left: 55px;
     justify-self: center;
     align-self: center;
@@ -63,8 +65,6 @@ nav a:hover {
     font-family: "Kode Mono";
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    border-style: solid;
-    border-width: 3px;
 }
 #opening-txt {
     grid-column: 2/3;
@@ -75,23 +75,16 @@ nav a:hover {
 
 /* FOOTER (ALL PURPOSES) */
 footer {
+    display: grid;
+    grid-template-columns: 150px auto;
     background-color: #a87b45;
-    padding: 10px 25px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     border-style: solid;
     border-width: 3px;
 }
-footer a {
-    text-align: center;
-    color: #6effee;
-    text-decoration: none;
-}
-.footer-links:hover {
-    background-color: #9bfff3;
-    color: #753f12;
-    text-decoration: underline;
+#logo-link-bottom {
+    padding-right: 100px;
+    justify-self: right;
+    align-self: center;
 }
 
 
@@ -122,19 +115,32 @@ footer a {
     border-color: #6effee;
   }
   .hero-button a:hover {
-    background-color: #9bfff3;
-    color: #753f12;
+    background-color: #6effee;
+    color: #00493a;
     text-decoration: underline;
   }
 
 
 /* MAIN SECTION (FOR HOME PAGE) */
-.home-grid {
+.home-grid-portrait {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
     gap: 10px;
     background-color: #6effee;
+    border-top: 3px solid #00362a;
+    border-left: 3px solid #00362a;
+    border-right: 3px solid #00362a;
+}
+.home-grid-landscape {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+    background-color: #6effee;
+    border-left: 3px solid #00362a;
+    border-right: 3px solid #00362a;
+    border-bottom: 3px solid #00362a
 }
 .car-pic-portrait {
     display: flex;
@@ -178,6 +184,9 @@ footer a {
     display: block;
     gap: 10px;
     background-color: #6effee;
+    border-color: #00362a;
+    border-style: solid;
+    border-width: 3px;
 }
 .location-pic {
     display: flex;
@@ -206,8 +215,8 @@ footer a {
     position: absolute;
     left: 40px;
     top: 300px;
-    background-color: #00aa96;
-    border-color: rgb(0, 58, 51);
+    background-color: #00876a;
+    border-color: #00493a;
     border-style: solid;
     border-width: 5px;
     margin: 10px
@@ -220,8 +229,8 @@ footer a {
     position: absolute;
     right: 40px;
     top: 300px;
-    background-color: #00aa96;
-    border-color: rgb(0, 58, 51);
+    background-color: #00876a;
+    border-color: #00362a;
     border-style: solid;
     border-width: 5px;
     margin: 10px
